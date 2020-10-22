@@ -43,7 +43,7 @@ router.put('/', (req, res) => {
         message: error.message
       })
     } else {
-      res.status(201).json({
+      res.json({
         message: 'Data mahasiswa berhasil diubah'
       })
     }
@@ -57,7 +57,7 @@ router.delete('/', (req, res) => {
         message: error.message
       })
     } else {
-      res.status(201).json({
+      res.json({
         message: 'Data mahasiswa berhasil dihapus'
       })
     }
